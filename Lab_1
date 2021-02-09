@@ -1,1 +1,10 @@
+package com.company;
+
+public class hash {
+
+    public static void main(String[] args) {
+        hash b= new hash() ;
+        System.out.println("Hash=" + b .hashCode());
+    }
+}
 
