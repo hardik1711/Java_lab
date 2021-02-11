@@ -1,0 +1,12 @@
+package com.company;
+
+import java.awt.*;
+
+public class cframe extends Frame {
+    public static void main(String[] args) {
+
+        cframe f1=new cframe();
+        f1.setSize(500,500);
+        f1.setVisible(true);
+    }
+}
