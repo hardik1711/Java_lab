@@ -1,0 +1,28 @@
+package com.company;
+
+import java.awt.*;
+
+public class cont {
+
+    public static void main(String[] args) {
+
+        Frame f1 = new Frame();
+        Checkbox c1=new Checkbox("Java");
+        TextField t1=new TextField();
+        Choice c =new Choice();
+        c.setBounds(100,100,75,75);
+        c.add("apple");
+        c.add("ball");
+        c.add("cat");
+        c.add("dog");
+        f1.add(c);
+        f1.add(c1);
+        //f1.add(r1);
+        f1.add(t1);
+
+        f1.setLayout(new FlowLayout());
+        f1.setSize(400,400);
+        f1.setVisible(true);
+
+    }
+}
