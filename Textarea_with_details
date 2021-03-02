@@ -1,0 +1,45 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Cbutton implements ActionListener {
+
+    Button b1=new Button("Click to know about me");
+    Button b2=new Button("clear");
+
+    TextArea ta=new TextArea(5,20);
+    Frame f=new Frame();
+    Cbutton()
+    {
+
+        f.setSize(400,400);
+        f.setVisible(true);
+        f.setLayout(new FlowLayout());
+        f.add(b1);
+        f.add(b2);
+        f.add(ta);
+        b1.addActionListener(this);
+        b2.addActionListener(this);
+
+
+
+
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String s=e.getActionCommand();
+        if (s.equals("Click to know about me"))
+            ta.setText("HARDIK SHARMA"
+            +"\n"+ "19100BTCSICS05436"+"\n"+"Btech CSE"+"\n"+
+                    "2ND YEAR 4TH YEAR");
+        if (s.equals("clear"))
+            ta.setText("");
+    }
+
+    public static void main(String[] args) {
+
+        Cbutton c=new Cbutton();
+    }
+}
