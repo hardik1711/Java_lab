@@ -13,10 +13,10 @@ public class checkbox implements ItemListener {
 f.setSize(400,400);
 f.setVisible(true);
 f.setLayout(new FlowLayout());
-        c1=new Checkbox("red");
-        c2=new Checkbox("green");
-        c3=new Checkbox("yellow");
-        c4=new Checkbox("blue");
+        c1=new Checkbox("red",c,false);
+        c2=new Checkbox("green",c,false);
+        c3=new Checkbox("yellow",c,false);
+        c4=new Checkbox("blue",c,false);
         c1.addItemListener(this);
         c2.addItemListener(this);
         c3.addItemListener(this);
